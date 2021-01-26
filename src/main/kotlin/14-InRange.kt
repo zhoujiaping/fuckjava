@@ -4,12 +4,11 @@ class DateRange(override val start: MyDate, override val endInclusive: MyDate)
         var curDate = start
         return object : Iterator<MyDate> {
             override fun next(): MyDate {
+                val ret = curDate
                 curDate = curDate.nextDay()
-                return curDate
+                return ret
             }
-
-            override fun hasNext() = curDate < endInclusive
-
+            override fun hasNext() = curDate <= endInclusive
         }
     }
 }

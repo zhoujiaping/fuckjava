@@ -1,5 +1,4 @@
 import TimeInterval.*
-import java.io.File
 
 operator fun MyDate.plus(timeInterval: TimeInterval): MyDate = addTimeIntervals(timeInterval,1)
 operator fun MyDate.plus(timeIntervals: TimeIntervals): MyDate = addTimeIntervals(timeIntervals.interval,timeIntervals.number)
