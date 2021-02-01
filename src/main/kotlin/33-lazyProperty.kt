@@ -1,7 +1,10 @@
 class LazyProperty(val initializer: () -> Int) {
-    /* TODO */
+    var v:Int?=null
     val lazy: Int
         get() {
-            TODO()
+            if(v==null){
+                v = initializer()
+            }
+            return v!!
         }
 }

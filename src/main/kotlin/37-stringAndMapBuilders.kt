@@ -24,3 +24,9 @@ fun usage(): Map<Int, String> {
         }
     }
 }
+
+fun buildMutableMap(build: MutableMap<Int, String>.() -> Unit): Map<Int, String> {
+    val map = mutableMapOf<Int,String>()
+    map.build()
+    return map
+}
