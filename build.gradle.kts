@@ -2,9 +2,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    kotlin("jvm") version "1.3.41"
+    kotlin("jvm") version "1.3.50"
 }
-
+//ext.set("kotlin_version","1.3.41")
 group = "org.sirenia"
 version = "1.0-SNAPSHOT"
 
