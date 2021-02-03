@@ -23,7 +23,7 @@ dependencies {
     testCompile("junit", "junit", "4.12")
     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
     //compile("org.jetbrains.kotlinx","kotlinx-coroutines-core", "1.4.2")
-    compile("org.jetbrains.kotlinx","kotlinx-coroutines-core", "1.3.9")
+    implementation("org.jetbrains.kotlinx","kotlinx-coroutines-core", "1.3.9")
 
 }
 

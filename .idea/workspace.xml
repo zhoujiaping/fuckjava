@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b1d403a-0d0d-43e3-8204-71fc463380f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/co10-cancel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/co11-finally.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/co12-noncancellable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/co13-timeout.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/co14-timeoutAndResource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine03.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine04.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine05.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine06.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine07.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine08.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine09-cancel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coroutine.md" beforeDir="false" afterPath="$PROJECT_DIR$/coroutine.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/coroutine/coroutine02.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/koans/17-operatorsOverloading.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/koans/17-operatorsOverloading.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/koans/39-buildersHowItWorks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/koans/39-buildersHowItWorks.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nx69g8kJpI1WlFOWddMrDhJgAC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Coroutine09_cancelKt">
+    <configuration name="Coroutine05Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="fuckjava.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="coroutine.Coroutine05Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coroutine06Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="fuckjava.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="coroutine.Coroutine06Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coroutine07Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="fuckjava.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="coroutine.Coroutine07Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coroutine08Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="fuckjava.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="coroutine.Coroutine08Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Coroutine09_cancelKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="fuckjava.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="coroutine.Coroutine09_cancelKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Coroutine09_cancelKt" />
+        <item itemvalue="Application.Coroutine08Kt" />
+        <item itemvalue="Application.Coroutine07Kt" />
+        <item itemvalue="Application.Coroutine06Kt" />
+        <item itemvalue="Application.Coroutine05Kt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b1d403a-0d0d-43e3-8204-71fc463380f0" name="Default Changelist" comment="" />
+      <created>1612319267242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612319267242</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

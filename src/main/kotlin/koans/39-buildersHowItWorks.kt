@@ -1,6 +1,6 @@
 package koans
 
-import Answer.*
+import koans.Answer.*
 
 enum class Answer { a, b, c }
 

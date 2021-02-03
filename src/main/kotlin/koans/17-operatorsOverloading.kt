@@ -1,6 +1,6 @@
 package koans
 
-import TimeInterval.*
+import koans.TimeInterval.*
 
 operator fun MyDate.plus(timeInterval: TimeInterval): MyDate = addTimeIntervals(timeInterval,1)
 operator fun MyDate.plus(timeIntervals: TimeIntervals): MyDate = addTimeIntervals(timeIntervals.interval,timeIntervals.number)
