@@ -13,7 +13,7 @@ runBlocking 与 coroutineScope 可能看起来很类似，因为它们都会等�
 由于存在这点差异，runBlocking 是常规函数，而 coroutineScope 是挂起函数。
 
  runBlocking:挂起当前线程等待协程体执行结束
- coroutineScope:？？？
+ coroutineScope:挂起当前协程，当前协程所在线程可以执行其他任务
  */
 fun main() = runBlocking { // this: CoroutineScope
     launch {

@@ -24,4 +24,16 @@ suspend
 如何使用
     
 
+文章
+Kotlin Coroutines不复杂, 我来帮你理一理
+https://blog.csdn.net/weixin_45714179/article/details/103199536
+
+Kotlin协程高级技巧和诀窍
+https://blog.csdn.net/tigershin/article/details/86482808
+
+探究高级的Kotlin Coroutines知识
+https://www.cnblogs.com/mengdd/p/deep-explore-kotlin-coroutines.html
+
+kotlin - Coroutine 协程
+https://www.jianshu.com/p/76d2f47b900d
 
