@@ -23,6 +23,14 @@ suspend
     用作修饰会被暂停的函数，被标记为 suspend 的函数只能运行在协程或者其他 suspend 函数当中。
 如何使用
     
+问题：
+如果只是解决线程切换的问题，其实不需要协程，需要的是任务调度
+（创建各种task，然后分配在线程池上，各线程上跑分别跑一些task）。
+个人认为协程的重点在于解决回调黑洞这样的问题。这也是为什么java一直不搞协程的原因之一吧。
+rxjava实际上就提供了一套任务调度的方案。
+关于协程处理共享资源不需要锁，将相关的task安排到同一个线程执行，一样不需要锁。
+
+
 
 文章
 Kotlin Coroutines不复杂, 我来帮你理一理
@@ -36,4 +44,7 @@ https://www.cnblogs.com/mengdd/p/deep-explore-kotlin-coroutines.html
 
 kotlin - Coroutine 协程
 https://www.jianshu.com/p/76d2f47b900d
+
+kotlin之协程(七),协程中relay、yield 区别
+https://www.jianshu.com/p/402a69dbd66d
 

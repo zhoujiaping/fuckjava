@@ -24,7 +24,6 @@ dependencies {
     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
     //compile("org.jetbrains.kotlinx","kotlinx-coroutines-core", "1.4.2")
     implementation("org.jetbrains.kotlinx","kotlinx-coroutines-core", "1.3.9")
-
 }
 
 configure<JavaPluginConvention> {
