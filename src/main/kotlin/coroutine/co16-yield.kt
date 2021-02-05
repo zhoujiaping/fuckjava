@@ -11,7 +11,7 @@ fun main()  {
             println(LocalTime.now())
             launch{
                 delay(2000)
-                yield("result")
+                yield()
                 delay(1500)
             }
             launch{
