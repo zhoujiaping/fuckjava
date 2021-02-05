@@ -96,3 +96,6 @@ https://blog.csdn.net/qq923201817/article/details/113619938
 
 Kotlin1.3协程Api详解（CoroutineScope， CoroutineContext详解）
 https://www.jianshu.com/p/0ecd895b1016
+
+Kotlin异步转同步
+https://blog.csdn.net/long8313002/article/details/109164146
