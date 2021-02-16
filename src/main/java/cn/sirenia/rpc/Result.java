@@ -3,7 +3,6 @@ package cn.sirenia.rpc;
 import java.io.Serializable;
 
 /**
- * 返回给用户的结果
  */
 public class Result<T> implements Serializable{
 	private static final String SUCCESS = "200";

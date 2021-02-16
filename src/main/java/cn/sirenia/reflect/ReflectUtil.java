@@ -2,7 +2,9 @@ package cn.sirenia.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
@@ -21,6 +23,30 @@ public class ReflectUtil {
             }
         }
     }
+    public static Map<String,Field> memberFields(Object obj){
+        Map<String,Field> fields = new HashMap<>();
+        for (Class<?> clazz = obj.getClass(); clazz != Object.class; clazz = clazz
+                .getSuperclass()) {
+            Field[] fs = clazz.getDeclaredFields();
+            for(int i=0;i<fs.length;i++){
+                if(!fs[i].isSynthetic() && !Modifier.isStatic(fs[i].getModifiers())){
+                    //考虑子类覆盖父类字段的情况，要用putIfAbsent
+                    fields.putIfAbsent(fs[i].getName(),fs[i]);
+                }
+            }
+        }
+        return fields;
+    }
+    public static void eachMemberFields(Object obj, Consumer<Field> consumer){
+        Map<String,Field> fields = memberFields(obj);
+        fields.forEach((name,field)->{
+            boolean accessible = field.isAccessible();
+            if(!accessible){
+                field.setAccessible(true);
+            }
+            consumer.accept(field);
+        });
+    }
     public static Field getFieldByFieldName(Object obj, String fieldName) {
         for (Class<?> superClass = obj.getClass(); superClass != Object.class; superClass = superClass
                 .getSuperclass()) {
@@ -34,40 +60,24 @@ public class ReflectUtil {
     /**
      * 获取obj对象fieldName的属性值
      *
-     * @param obj
-     * @param fieldName
-     * @return
-     * @throws SecurityException
-     * @throws NoSuchFieldException
-     * @throws IllegalArgumentException
-     * @throws IllegalAccessException
      */
     public static Object getValueByFieldName(Object obj, String fieldName)
-            throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
+            throws SecurityException, IllegalArgumentException, IllegalAccessException {
         Field field = getFieldByFieldName(obj, fieldName);
         Object value = null;
         if (field != null) {
-            if (field.isAccessible()) {
-                value = field.get(obj);
-            } else {
+            if (!field.isAccessible()) {
                 field.setAccessible(true);
-                value = field.get(obj);
-                field.setAccessible(false);
+                //field.setAccessible(false);
             }
+            value = field.get(obj);
         }
         return value;
     }
 
     /**
      * 设置obj对象fieldName的属性值
-     *
-     * @param obj
-     * @param fieldName
-     * @param value
-     * @throws SecurityException
-     * @throws NoSuchFieldException
-     * @throws IllegalArgumentException
-     * @throws IllegalAccessException
+
      */
     public static void setValueByFieldName(Object obj, String fieldName, Object value)
             throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
